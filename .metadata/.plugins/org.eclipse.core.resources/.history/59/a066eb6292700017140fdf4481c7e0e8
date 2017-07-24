@@ -1,0 +1,24 @@
+package factory;
+
+import classes.Caruta;
+import interfaces.IVehicul;
+import interfaces.IVehiculFactory;
+
+public class VehiculFactory implements IVehiculFactory {
+
+	@Override
+	public IVehicul createVehicul(int type) {
+		switch (type) {
+		case 1:
+			return new Caruta(0, 0, 0, null);
+			break;
+
+		default:
+			break;
+		}
+	}
+
+	
+	
+	
+}

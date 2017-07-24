@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete element from project &apos;ModelViewControllerPattern&apos;&#x0A;- Original project: &apos;ModelViewControllerPattern&apos;&#x0A;- Original element: &apos;ModelViewControllerPattern/src/vuew&apos;" description="Delete element" element1="/src&lt;vuew" elements="1" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1500919030972" subPackages="false" version="1.0"/>
+</session>

@@ -1,0 +1,24 @@
+package traffic;
+
+import java.util.ArrayList;
+
+import factory.VehiculFactory;
+import interfaces.IVehicul;
+import interfaces.IVehiculFactory;
+
+public class Main {
+
+	public static void main(String[] args) {
+
+		IVehiculFactory vehiculFactory = new VehiculFactory();
+		ArrayList<IVehicul> vehiculs = new ArrayList<>(10);
+		
+		for(int i = 0 ; i < 10 ; i++){ 
+			IVehicul vehicul = vehiculFactory.createVehicul(i%4 + 1);
+			vehiculs.set(i, vehicul);
+		}
+		
+		
+	}
+
+}

@@ -1,0 +1,32 @@
+package classes;
+
+import interfaces.IVehicul;
+public abstract class Vehicul implements IVehicul {
+
+	private int numarRoti; 
+	private int numarLocuri;
+	
+	@Override
+	public int getNumarRoti() {
+		
+		return this.numarRoti;
+	}
+
+	@Override
+	public void setNumarRoti(int nrRoti) {
+		this.numarRoti = nrRoti;
+		
+	}
+
+	@Override
+	public int getNrLocuri() {
+		return this.numarLocuri;
+	}
+
+	@Override
+	public void setNumarLocuri(int nrLocuri) {
+		this.numarLocuri = nrLocuri;
+		
+	}
+
+}

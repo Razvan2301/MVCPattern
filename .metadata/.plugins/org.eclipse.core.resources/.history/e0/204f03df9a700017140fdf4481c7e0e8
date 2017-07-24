@@ -1,0 +1,27 @@
+package controller;
+
+import model.NumberModel;
+import view.NumberView;
+
+public class NumberController {
+
+	protected NumberModel numberModel = new NumberModel();
+	protected NumberView numberView = new NumberView();
+	
+	public void passData(){ 
+		numberView.createView(numberModel.getNumbers());
+	}
+	
+	
+	
+	
+}
+
+
+class Run{
+public static void main(String []args) {
+		NumberController numberController = new NumberController();
+		numberController.passData();
+	}
+	
+}

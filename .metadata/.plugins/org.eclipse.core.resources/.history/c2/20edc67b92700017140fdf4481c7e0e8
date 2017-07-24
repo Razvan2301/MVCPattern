@@ -1,0 +1,37 @@
+package factory;
+
+import classes.Camion;
+import classes.Caruta;
+import classes.Masina;
+import classes.Scuter;
+import interfaces.IVehicul;
+import interfaces.IVehiculFactory;
+
+public class VehiculFactory implements IVehiculFactory {
+
+	private static IVehicul vehicul;
+	
+	@Override
+	public static IVehicul createVehicul(int type) {
+		switch (type) {
+		case 1:
+			vehicul = new Caruta(0, 0, null, 0);
+			break;
+		case 2:
+			vehicul = new Camion(0, 0, null, 0);
+			break;
+		case 3: 
+			vehicul = new Caruta(0, 0, null, 0);
+		case 4:
+			vehicul = new Masina(0, 0, null, 0);
+		default:
+			vehicul = new Scuter(0, 0, null, null);
+			break;
+		}
+		return null;
+	}
+
+	
+	
+	
+}
